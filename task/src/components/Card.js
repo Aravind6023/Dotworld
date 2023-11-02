@@ -29,13 +29,12 @@ export function Card() {
                 <section className='row d-flex justify-content-center'>
                     <div className='col-10'>
                         <div className='row g-4 d-flex justify-content-between'>
-                            {Object.keys(data).length > 0 ? (
+                            {data.length > 0 ? (
                                 data.map((value, index) => (
-                                    <div key={index} className="col-12 col-md-4 col-lg-4 cus-box-shadow">
+                                    <div className="col-12 col-md-4 col-lg-4 cus-box-shadow">
                                         <div className="row m-5 rounded-5 bg-gradient py-3">
                                             <div className="col-lg-2 p-0">
                                                 <img src={value.thumbnailUrl} className="rounded-5 w-100 m-2" alt="No Image" />
-                                
                                             </div>
                                             <div className="col-lg-10 px-3 d-flex flex-column justify-content-around align-items-center">
                                                 <div>
