@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export function Card() {
+    
     const [data, setData] = useState([]);
 
 
@@ -15,9 +16,6 @@ export function Card() {
                     console.log("No products were added");
                     console.log(data);
                 }
-            })
-            .then((data) => {
-              this.setState({ photos: data });
             })
             .catch((error) => {
               console.error('Error fetching data:', error);
