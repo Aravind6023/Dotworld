@@ -8,7 +8,7 @@ const app = express();
 app.use(
     cors(
         {
-            origin: 'http://localhost:3001',
+            origin: 'http://localhost:3000',
         }
 ));
 
@@ -23,7 +23,7 @@ app.get('/photos', async (req, res) => {
   }
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3456;
 const server = http.createServer(app);
 
 server.listen(port, () => {

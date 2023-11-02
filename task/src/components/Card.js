@@ -6,7 +6,7 @@ export function Card() {
 
 
     useEffect(() => {
-            axios.get('http://localhost:3000/photos')
+            axios.get('http://localhost:3456/photos')
             .then((response) => {
                 const data = response.data;
                 if (data.length > 0) {
